@@ -18,45 +18,43 @@
    <header>
     <nav class="navbar navbar-expand-lg navbar-light my-nav">
         <a class="navbar-brand my-brand" href="index.html">
-          <img id="m-logo" src="img/logo.png" alt="NodMotors-logo"/>
+          <img id="m-logo" src="img/logo.png" alt="NodMotors-logo">
         </a>
         
-        <button id="rotate" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<button id="rotate" class="navbar-toggler" type="button" onclick="burgerClick()" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
            <span class="line"></span> 
            <span class="line"></span> 
            <span class="line"></span>
            <span class="line"></span>
-           
-	  
-	  
-        </button>
+		</button>
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
+          <ul id="nav" class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-a nav-a-active" href="#">Cars</a>
+              <a class="nav-a nav-a-active nav1" href="#">Cars</a>
             </li>
             <li class="nav-item">
-              <a class="nav-a" href="#">Terms and Conditions</a>
+              <a class="nav-a nav2" href="#">Terms and Conditions</a>
             </li>
             <li class="nav-item">
-              <a class="nav-a" href="#">Contact</a>
-            </li>
+              <a class="nav-a nav3" href="#">Contact</a>
+			</li>
+			<li class="nav-item">
+				<button class="book">Book</button>
+			  </li>
           </ul>
-	  <button class="book">Book</button>          
+	  			          
         </div>
       </nav>  
   </header>
   <div class="main">
-	<section class="main-section">
-                
+	<section id="hero" class="main-section">
 		<h1>Tesla Model 3</h1>
 		<div class="p-for-center">
 			<p class="main-p">Luxury Fast</p>
 		</div>
-		
-       		<h2>nodmotors</h2>
-          	<img class="main-img" src="img/mainpic.png" alt="Tesla Model 3">
+    <h2>nodmotors</h2>
+    <img class="main-img" src="img/mainpic.png" alt="Tesla Model 3">
 		<img class="main-img2" src="img/1.png" alt="Tesla Model 3">
 		<div class="caption">
 			<div class="power">
@@ -73,17 +71,16 @@
 			</div>											
  		</div>
 	</section>
-	<div class="scroll">
-		
+	<div class="scroll" onclick="scrollWin()">
 	</div>
 	
   </div>
   <div class="cars">
-	<section class="available-cars-section">
-		<h4>Available Cars</h4>
-		<p class="use-filters">Please Use filter for optimal results</p>
-		<div class="dropdowns">
-			<select class="slct1">
+		<section class="available-cars-section">
+			<h4>Available Cars</h4>
+			<p class="use-filters">Please Use filter for optimal results</p>
+			<div class="dropdowns">
+				<select class="slct1">
                			<option selected hidden>Manufacturer</option>
                 		<option value="Tesla">Tesla</option>
                 		<option value="Mercedes-Benz">Mercedes-Benz</option>
@@ -92,44 +89,131 @@
                 		<option value="Hyundai">Hyundai</option>
                 		<option value="Suzuki">Suzuki</option>
                 
-            		</select>
+        </select>
             
-            		<select class="slct2">
+        <select class="slct2">
                			<option selected hidden>Model</option>
                 		<option value="Value1">Value1</option>
                 		<option value="Value2">Value2</option>
                 		<option value="Value3">Value3</option>
                 		<option value="Value4">Value4</option>
-            		</select>
-            		<select class="slct3">
+        </select>
+        <select class="slct3">
                 		<option selected hidden>Year</option>
                 		<option value="Val1">Val1</option>
                 		<option value="Val2">Val2</option>
                 		<option value="Val3">Val3</option>
                 		<option value="Val4">Val4</option>
-            		</select>
-           		 <select class="green20">
+        </select>
+        <select class="green20">
                 		<option selected hidden>20</option>
                 		<option class="option" value="Vl1">Vl1</option>
                 		<option value="Vl2">Vl2</option>
                 		<option value="Vl3">Vl3</option>
                 		<option value="Vl4">Vl4</option>
-            		</select>
+        </select>
+		  </div>
+		</section>
+		<div class="cars-begin">
+			<div class="show-cars">
+				<div class="car-block">
+					<p class="price">from:<span class="green-span">59 000$</span></p>
+					<img src="img/1.png" alt="Tesla Model 3">
+					<div class="colors">
+						<div class="round round-up white"></div>
+						<div class="round round-up black"></div>
+						<div class="round round-up red"></div>
+					</div>
+					<h5>Tesla Model 3</h5>
+					<div class="hp-speed">
+							<p class="hp">302 hp</p>
+							<p class="hp">200 km/ph</p>
+						</div>
+				</div>
+				<div class="car-block">
+					<p class="price">from:<span class="green-span">79 000$</span></p>
+					<img src="img/2.png" alt="Tesla Model 3S">
+					<div class="colors">
+							<div class="round round-up white"></div>
+							<div class="round round-up black"></div>
+						</div>
+					<h5>Tesla Model 3S</h5>
+					<div class="hp-speed">
+							<p class="hp">343 hp</p>
+							<p class="hp">252 km/ph</p>
+						</div>
+				</div>
+				<div class="car-block">
+					<p class="price">from:<span class="green-span">103 000$</span></p>
+					<img src="img/3.png" alt="Tesla Model 3Z">
+					<div class="colors">
+							<div class="round round-up white"></div>
+							<div class="round round-up orange"></div>
+							<div class="round round-up grey"></div>
+							<div class="round round-up green"></div>
+						</div>
+					<h5>Tesla Model 3Z</h5>
+					<div class="hp-speed">
+							<p class="hp">380 hp</p>
+							<p class="hp">302 km/ph</p>
+						</div>
+				</div>
+				<div class="car-block">
+					<p class="price">from:<span class="green-span">61 000$</span></p>
+					<img src="img/4.png" alt="BMW X2">
+					<div class="colors">
+							<div class="round white"></div>
+							<div class="round black"></div>
+							<div class="round yellow"></div>
+							<div class="round grey"></div>
+					</div>
+					<h5>The first ever BMW X2</h5>
+					<div class="hp-speed">
+							<p class="hp">302 hp</p>
+							<p class="hp">200 km/ph</p>
+						</div>
+				</div>
+				<div class="car-block">
+					<p class="price">from:<span class="green-span">92 000$</span></p>
+					<img src="img/5.png" alt="BMW M6 Gran Coupe">
+					<div class="colors">
+							<div class="round white"></div>
+							<div class="round black"></div>
+							<div class="round blue"></div>
+							<div class="round grey"></div>
+							<div class="round pink"></div>
+					</div>
+					<h5>BMW M6 Gran Coupe</h5>
+					<div class="hp-speed">
+							<p class="hp">343 hp</p>
+							<p class="hp">252 km/ph</p>
+					</div>
+				</div>
+				<div class="car-block">
+					<p class="price">from:<span class="green-span">132 000$</span></p>
+					<img src="img/6.png" alt="BMW X7">
+					<div class="colors">
+							<span class="round white"></span>
+							<span class="round black"></span>
+							<span class="round grey"></span>
+							<span class="round blue"></span>
+					</div>
+					<h5>BMW X7</h5>
+					<div class="hp-speed">
+						<p class="hp">380 hp</p>
+						<p class="hp">302 km/ph</p>
+					</div>
+				</div>
+			</div>
 		</div>
-	</section>
-  </div>
+	</div>
+	
 
 
 
 
 
-  <script>
-	$(document).ready(function(){
-	$('#rotate').click(function(){
-		$(this).toggleClass('open');
-	});
-});
-  </script>
+ 
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
