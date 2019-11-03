@@ -290,7 +290,10 @@ h4{
 
 }
 
+
+
 .use-filters{
+
 font-size: 12px;
   font-weight: normal;
   font-stretch: normal;
@@ -319,15 +322,44 @@ select{
   text-align: center;
   color: #181818;
   margin-top: 27px;
-  border: 1px solid black;
+font-family: PantonMtav3; 
 display: inline-block;
-	margin-left: 20px;
+border: 1px solid white;
+margin-left: 20px;
 -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-appearance: none;
   -moz-appearance: none;
+-o-appearance: none;
+
+  
+ 
   }
+
+option{
+font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: left;
+  color: #181818;
+
+}
+
+select + i.fa {
+margin-left: -40px; 
+pointer-events: none; 
+}
+
+.chevron-green{
+color: white;
+}
+
+
+
 
 .slct2{
 padding-left: 55px;
@@ -341,6 +373,7 @@ select:first-child{
 margin-left: 172px;
 
 }
+
 
 
 .green20{
@@ -359,6 +392,11 @@ margin-left: 172px;
     padding-left: 19px;
     background-image: linear-gradient(to bottom, #6ab04c, #badc58);
   }
+
+
+
+
+
 .cars-begin{
   display: flex;
   justify-content: center;
@@ -493,7 +531,57 @@ margin-left: 172px;
   }
 
 
+footer{
+display: flex;
+justify-content: center;
+margin-top: 90px;
+padding-bottom: 44.7px;
+}
 
+.info{
+display: flex;
+width: 79.3%;
+justify-content: space-between;
+align-items: top;
+}
+
+.info p, .contact{
+font-family: PantonMtav3;
+  font-size: 12px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.17;
+  letter-spacing: normal; 
+  color: #95a5a6;
+
+}
+
+.contact-div{
+margin-top: -10px;
+
+}
+
+.mail{
+margin-left: 20px;
+}
+
+
+
+.contact:hover{
+color: #95a5a6;
+text-decoration: none;
+}
+
+@media screen and (min-width: 1367px) {
+.show-cars{
+width: 1086px;
+}
+
+.info{
+width: 1086px;
+}
+}
 
 @media screen and (max-width: 1270px) {
 
@@ -523,16 +611,62 @@ margin-left: 250px;
   }
   
   .navbar-nav{
-  margin-left: 350px;
+  margin-left: 300px;
   
   }
+
+select:first-child{
+margin-left: 70px;
+
+}
+
   }
 
-  @media screen and (max-width: 1250px) {
-    .navbar-nav{
-      margin-left: 300px;
-    }
-  }
+  
+@media screen and (max-width: 1154px) {
+.dropdowns{
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+
+h4{
+text-align: center;
+margin-left: 0px;
+}
+
+select{
+margin-top: 10px;
+
+}
+
+select:first-child{
+margin-left: 0px;
+margin-top: 0px;
+
+}
+
+.slct2{
+margin-left: 0px;
+}
+
+.slct3{
+margin-left: 0px;
+}
+
+.green20{
+margin-left: 0px;
+width: 188px;
+padding-left: 78px; 
+position: relative;
+top: 12px;
+}
+
+i.fa{
+display: none;
+}
+}
 
 @media screen and (max-width: 999px) {
 .main-img{
@@ -547,6 +681,8 @@ left: 7%;
   .navbar-nav{
     margin-left: 0px;
     text-align: center;
+   margin-top: -20px;
+    
   }
 
   .nav-a{
@@ -560,10 +696,9 @@ left: 7%;
 
   
   .book{
-    
-    position: absolute;
- 
-    
+margin-top: 10px;
+    margin-left: 0px;
+      
   }
 }
 
@@ -590,6 +725,19 @@ margin-left: 500px;
 left: 0px;
 }
 }
+
+@media screen and (max-width: 884px) {
+.info{
+flex-direction: column-reverse;
+align-items: center;
+
+}
+
+.info p, .academy-logo{
+margin-top: 40px;
+}
+
+
 
 @media screen and (max-width: 823px) {
 
@@ -707,6 +855,11 @@ left: 20px;
 .main-img2{
 left: 0px;
 
+}
+
+.use-filters{
+text-align: center;
+margin-left: -30px;
 }
 }
 
